@@ -16,8 +16,6 @@ public class Starter {
   }
 
     public String getName() {return name;}
-
     public String getDescription() {return description;}
-
     public int getImageID() {return imageID;}
 }
