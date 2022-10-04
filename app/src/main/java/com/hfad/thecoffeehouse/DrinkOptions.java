@@ -23,7 +23,7 @@ public class DrinkOptions extends AppCompatActivity {
     listDrinks.setAdapter(listAdapter);
       AdapterView.OnItemClickListener itemClickListener= new AdapterView.OnItemClickListener() {
           @Override
-          public void onItemClick(AdapterView<?> lisDrinks, View itemView, int position, long id) {
+          public void onItemClick(AdapterView<?> listDrinks, View itemView, int position, long id) {
               Intent intent= new Intent(DrinkOptions.this,com.hfad.thecoffeehouse.DrinkActivity.class );
               intent.putExtra(DrinkActivity.EXTRA_DRINKID, (int) id);
               startActivity(intent);
