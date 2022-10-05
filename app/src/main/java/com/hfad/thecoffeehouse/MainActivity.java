@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
            Intent intent= new Intent(MainActivity.this, com.hfad.thecoffeehouse.StarterOptions.class);
            startActivity(intent);
        }
+       else if (position==2){
+           Intent intent= new Intent(MainActivity.this, com.hfad.thecoffeehouse.foodOptions.class);
+           startActivity(intent);
+       }
            }
         };
         ListView listView= (ListView) findViewById(R.id.list_options);

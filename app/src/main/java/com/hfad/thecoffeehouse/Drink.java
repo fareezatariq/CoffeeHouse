@@ -8,7 +8,7 @@ public class Drink {
     public static final Drink[] drinks={
        new Drink("Latte", "A couple of espresso " +
                "shots with steamed milk",
-               R.drawable.new_project),
+               R.drawable.lattee),
        new Drink("Cappuccino", "Espresso, hot milk, " +
                "and a steamed milk foam",
                R.drawable.cafe_espresso),
