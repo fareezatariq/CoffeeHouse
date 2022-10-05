@@ -19,11 +19,14 @@ public class StarterOptions extends AppCompatActivity {
         ArrayAdapter<Starter> listAdapter= new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Starter.starters);
         ListView listStart= (ListView) findViewById(R.id.list_starters);
         listStart.setAdapter(listAdapter);
-        AdapterView.OnItemClickListener onItemClickListener= new AdapterView.OnItemClickListener() {
+        AdapterView.OnItemClickListener itemClickListener= new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> listStart, View itemView, int position, long id) {
                 Intent intent= new Intent(StarterOptions.this,com.hfad.thecoffeehouse.StarterActivity.class );
+                intent.putExtra(StarterActivity.Extra_STARTERID, (int) id);
+                startActivity(intent);
             }
         };
+        listStart.setOnItemClickListener(itemClickListener);
     }
 }

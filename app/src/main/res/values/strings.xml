@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">The Coffee House</string>
     <string name="coffee_house_logo">coffee house logo</string>
+    <string name="starter">starter</string>
     <string-array name="options">
         <item>Drinks</item>
         <item>Starters</item>
